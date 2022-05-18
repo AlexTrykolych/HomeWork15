@@ -1,0 +1,71 @@
+.indicators{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  &__coll{
+    width: 50%;
+  }
+  &__coll-speed{
+    flex-direction: column;
+    align-items: end;
+    padding: 66px 90px 66px 0 ;
+    position: relative;
+
+    &:before{
+      @extend %before-after-settings;
+      top: 1px;
+      right: 0;
+      background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+      z-index: -1;
+    }
+
+    p{
+      @extend %quicksand-medium;
+      font-size: $size-text-l;
+      max-width: 260px;
+      color: $universal-color;
+      letter-spacing: 0.03em;
+      text-align: end;
+    }
+  }
+  &__title{
+    @extend %quicksand-regular;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    color:$universal-color;
+    margin-bottom: 25px;
+  }
+  &__title-color{
+    color: #5E80FF;
+  }
+  &__icons-speed{
+    @extend %icon-settings;
+    background-image: url("./../assets/icon/indicators-speed-icon.svg");
+    text-align: end;
+    margin-bottom: 24px;
+  }
+
+  &__icons-people{
+    @extend %icon-settings;
+    background-image: url("./../assets/icon/indicators-people-icon.svg");
+    margin-bottom: 24px;
+  }
+  &__coll-people{
+    padding:66px 0 66px 90px ;
+    position: relative;
+
+    &:after{
+      @extend %before-after-settings;
+      background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+      top: 1px;
+      left: 0;
+      z-index: -1;
+    }
+    p{
+      @extend %quicksand-medium;
+      font-size: $size-text-l;
+      max-width: 260px;
+      color: #5E80FF;
+      letter-spacing: 0.03em;
+    }
+  }
+}

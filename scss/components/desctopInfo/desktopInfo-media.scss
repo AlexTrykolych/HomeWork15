@@ -1,0 +1,85 @@
+.desktopInfo{
+  @media screen  and (max-width: $content-wight-l){
+    .container{
+      max-width: $content-wight-md;
+    }
+
+     p {
+      max-width: 390px;
+      font-size: 13px;
+      line-height: 28px;
+      padding-bottom: 36px;
+    }
+    &__wrapper-banner{
+      width: 85%;
+      margin: 55px 0 60px 25px;
+      background-size: contain;
+
+    }
+  }
+  @media screen and (max-width: $content-wight-md){
+    .container{
+      max-width: $content-wight-s;
+    }
+    &__wrapper-coll-text{
+      padding: 110px 0 115px 55px ;
+    }
+    &__wrapper-banner{
+      margin-top:107px;
+      height: 72%;
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (max-width: $content-wight-s){
+    .container{
+      max-width: $content-wight-xs;
+    }
+    padding: 45px 0;
+   &__banner-none{
+     display: none;
+   }
+    &__coll-text{
+      h4{
+        font-size: 14px;
+      }
+      h2{
+        font-size: 44px;
+      }
+      p{
+        margin: 0 auto;
+        max-width: 446px;
+        font-size: 15px;
+      }
+    }
+
+    &__coll-text{
+      width: 100%;
+      text-align: center;
+    }
+    &__wrapper-coll-text{
+      padding: 0;
+    }
+
+    &__btn{
+      justify-content: center;
+    }
+
+  }
+  @media screen and (max-width:$content-wight-xs ){
+    .container{
+      max-width: 320px;
+    }
+    padding-top: 30px;
+    h4{
+      padding-bottom: 14px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    p{
+      max-width: 268px;
+      font-size: 9px;
+    }
+  }
+
+}

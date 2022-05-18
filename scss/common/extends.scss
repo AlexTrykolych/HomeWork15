@@ -1,0 +1,88 @@
+%open-sans-bold{
+font-family: $fon-open-sans;
+  font-weight: bold;
+}
+%open-sans-semiBold{
+  font-family: $fon-open-sans;
+  font-weight: 600;
+}
+%quicksand-Bold{
+  font-family: $fon-quicksand;
+  font-weight: bold;
+}
+%quicksand-medium{
+  font-family: $fon-quicksand;
+  font-weight: 500;
+}
+%quicksand-light{
+  font-family: $fon-quicksand;
+  font-weight: 300;
+}
+%quicksand-regular{
+  font-family: $fon-quicksand;
+  font-weight: 400;
+}
+%roboto-medium{
+  font-family: $fon-roboto;
+  font-weight: 500;
+}
+%roboto-regular{
+  font-family: $fon-roboto;
+  font-weight: 400;
+}
+
+%list-un-style-a{
+  text-decoration: none;
+  display: inline-block;
+}
+%style-hover{
+  transition: $transition;
+}
+%dropdown-menu{
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  display: none;
+  background-color: $dropdown-color;
+}
+%border-radius-50{
+  border-radius: 50%;
+}
+%display-non{
+  display: none;
+}
+%btn-style{
+  display: inline-block;
+  text-decoration: none;
+
+}
+%appInfo-style-icon{
+  background: #F1F5FF;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  padding: 26px 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+}
+%appInfo-coll-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+%icon-settings{
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+%before-after-settings{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+}

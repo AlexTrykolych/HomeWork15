@@ -1,0 +1,102 @@
+
+.header{
+  @media screen and (max-width: $content-wight-l){
+    .container{
+      max-width: 980px;
+    }
+
+    &__menu{
+      ul{
+        gap: 30px;
+      }
+    }
+    &__social{
+      ul{
+        gap: 30px;
+      }
+    }
+    &__logo{
+      padding-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: $content-wight-md){
+    .container{
+      max-width: $content-wight-s;
+    }
+
+    &__menu{
+      ul{
+        gap: 20px;
+      }
+    }
+    &__social{
+      ul{
+        gap: 20px;
+      }
+    }
+    &__logo{
+      padding-right: 35px;
+    }
+  }
+
+  @media screen and (max-width: $content-wight-s){
+    .container{
+      max-width: $content-wight-xs;
+    }
+  &{
+    position: relative;
+  }
+  .container{
+    max-width: 540px;
+  }
+
+  &__menu{
+    [type="checkbox"]:checked + ul{
+       display: block;
+    }
+    ul{
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 19%;
+      background-color: $main-color;
+    }
+    li{
+      text-align: center;
+      padding: 10px 0;
+    }
+    a{
+      color: $list-hover-color;
+      font-size: 18px;
+    }
+  }
+    &__dropdown-button{
+      justify-content: center;
+    }
+    &__dropdown{
+    display: none !important;
+  }
+    &__btn{
+      display: none;
+    }
+}
+
+  @media screen and (min-width: $content-wight-s){
+    .container{
+      min-width: 320px;
+    }
+    &__dropdown-button{
+      display: none;
+    }
+  }
+}
+  @media screen and (min-width: $content-wight-s){
+  .container{
+    min-width: 320px;
+  }
+  label{
+    display: none;
+  }
+}

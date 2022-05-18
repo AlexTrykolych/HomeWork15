@@ -1,0 +1,82 @@
+.header{
+ nav{
+   [type="checkbox"]{
+     display: none;
+   }
+ }
+  &__wrapper{
+    padding: 33px 0;
+  }
+
+  &__coll{
+    align-items: center;
+    width: 50%;
+  }
+
+  .row{
+    justify-content: space-between;
+  }
+
+  &__menu{
+   ul{
+     gap: 42px;
+     li{
+       position: relative;
+       &:hover{
+         ul{
+           display: block;
+         }
+       }
+     }
+      }
+   a{
+     @extend %quicksand-Bold;
+     font-size: 12px;
+   @include list_color($list_color:$list-color);
+     &:hover{
+       @include style-hover-color($color_hover:$list-hover-color);
+       &:active{
+        @include style-hover-color($color_hover:darkred);
+       }
+     }
+   }
+ }
+
+  &__logo{
+    padding-right: 73px;
+    a{
+      @include style-hover ($background_hover:$list-hover-color);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      &:hover{
+       @include style-hover ($background_hover:green);
+        &:active{
+          @include style-hover ($background_hover:darkred);
+        }
+      }
+    }
+  }
+
+  &__social{
+    ul{
+      gap: 44px;
+      justify-content: flex-end;
+    }
+    a{
+      @extend %quicksand-Bold;
+      text-decoration: none;
+    }
+  }
+
+  &__dropdown{
+    @extend %dropdown-menu;
+    li{
+      padding: 10px 0;
+    }
+  }
+
+}
+#header__input{
+  display: none;
+}

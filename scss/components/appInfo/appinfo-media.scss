@@ -1,0 +1,80 @@
+.appInfo{
+  @media screen and (max-width: $content-wight-l){
+    .container{
+      max-width: $content-wight-md;
+    }
+    &__border{
+      height: 2px;
+    }
+  }
+
+  @media  screen and ($content-wight-md){
+    .container{
+      max-width: $content-wight-s;
+    }
+  }
+
+  @media screen and (max-width: $content-wight-s){
+    .container{
+      max-width: $content-wight-xs;
+    }
+    &__border{
+      display: none;
+    }
+    p{
+      max-width: 373px;
+    }
+    h3{
+      font-size: 12px;
+    }
+    &__title{
+      padding-bottom: 55px;
+    }
+    &__wrapper-coll{
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 45px;
+    }
+    &__coll-style{
+      width: 100%;
+    }
+    &__icon-style{
+      margin-bottom: 15px;
+    }
+    &__wrapper-btn{
+      hr{
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $content-wight-xs){
+    .container{
+      max-width: 320px;
+    }
+    padding: 45px 0;
+    h2{
+      font-size: 20px;
+    }
+    &__title{
+      padding-bottom: 40px;
+    }
+    p{
+      max-width: 205px;
+    }
+    &__wrapper-btn{
+      flex-direction: column;
+      p{
+        display: none;
+      }
+    }
+    &__btn-red{
+      width: 100%;
+      text-align: center;
+    }
+    &__btn-blue{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

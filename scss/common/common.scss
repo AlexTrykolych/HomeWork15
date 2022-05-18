@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: $main-color;
+}
+.container{
+  max-width: 1236px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+}
+.list-un-style{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.alight-items-center{
+  align-items: center;
+}
+.btn{
+  display: inline-block;
+  padding: 13px 21px;
+  border-radius: 2px;
+  background-color:#D2E1FF ;
+  color: #3A79FF;
+  font-size: 13px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

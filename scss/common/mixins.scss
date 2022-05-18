@@ -1,0 +1,17 @@
+@mixin list_color($list_color){
+  @extend %list-un-style-a;
+  color:$list_color;
+}
+@mixin style-hover ($background_hover){
+  @extend %style-hover;
+  background-color: $background_hover;
+}
+@mixin style-hover-color($color_hover){
+  @extend %style-hover;
+  color: $color_hover;
+}
+@mixin btn-style($btn-color){
+  @extend %btn-style;
+  color: $btn-color;
+  font-size: $size-text-button;
+}

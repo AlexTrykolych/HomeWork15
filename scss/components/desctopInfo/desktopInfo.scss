@@ -1,0 +1,54 @@
+.desktopInfo{
+  background-color:$desktop-color;
+  &__coll{
+    width: 50%;
+    position: relative;
+  }
+  &__wrapper-coll-text{
+    padding: 208px 0 190px 158px;
+  }
+  h4{
+    @extend %roboto-medium;
+    font-size: $size-small-title;
+    text-transform: uppercase;
+    color: $title-color;
+    padding-bottom: 27px;
+  }
+  h2{
+    @extend %quicksand-medium;
+    font-size: 36px;
+    color:$title-color ;
+    padding-bottom: 27px;
+  }
+  p{
+    max-width: 390px;
+    @extend %roboto-regular;
+    font-size: $size-text-md;
+    line-height: 28px;
+    padding-bottom: 47px;
+  }
+  &__btn-video{
+    @include btn-style ($btn-color:#ffffff);
+    padding: 13px 21px;
+    @extend %quicksand-Bold;
+    background: $btn-color;
+    border: 1px solid $border-button;
+
+  }
+  &__btn-features{
+    @include btn-style ($btn-color:$color-button-2);
+    padding: 13px 21px;
+    @extend %quicksand-medium;
+    border: 1px solid $border-button;
+  }
+  &__wrapper-banner{
+    background-image: url('./../assets/images/banner-images.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin-top: 85px;
+    padding-right: 44px;
+  }
+  }

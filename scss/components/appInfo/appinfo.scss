@@ -1,0 +1,91 @@
+.appInfo{
+  @extend %icon-settings;
+  width: 100%;
+  height: 569px;
+  padding: 80px 0;
+
+
+  &__title{
+    text-align: center;
+    padding-bottom: 92px;
+    h4{
+      @extend %quicksand-Bold;
+      text-transform: uppercase;
+      color: $title-color;
+      font-size: $size-small-title;
+      padding-bottom: 20px;
+    }
+    h2{
+      @extend %quicksand-Bold;
+      font-size: 24px;
+      color: $title-color;
+    }
+  }
+
+  &__wrapper-coll{
+    justify-content: center;
+    gap:20px ;
+    padding-bottom: 92px;
+  }
+
+&__icon-style{
+  @extend %appInfo-style-icon;
+}
+
+  &__coll-style{
+    @extend %appInfo-coll-style;
+  }
+
+  h3{
+    @extend %open-sans-bold;
+    font-size: 14px;
+    color:#4074F8 ;
+    margin-bottom: 25px;
+  }
+  p{
+    max-width: 140px;
+    @extend %open-sans-semiBold;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    color:#ADB3CB;
+  }
+  &__border{
+    margin: 105px 0 0 0;
+    padding: 0;
+    width:28px;
+    height: 1px;
+    background-color: #DAE4FE;
+    border: none;
+  }
+  &__wrapper-btn{
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    hr{
+      margin: 0;
+      padding: 0;
+      width: 15px;
+      height: 1px;
+      background-color: #DAE4FE;
+      border: none;
+    }
+    p{
+      @extend %open-sans-semiBold;
+      font-size: $size-small-title;
+      text-transform: uppercase;
+    }
+  }
+  &__btn-red{
+    @include btn-style($btn-color:#D43F3F);
+    @extend %quicksand-Bold;
+    padding: 13px 16px;
+    background-color:  #FFD7D7;
+  }
+  &__btn-blue{
+    @include btn-style($btn-color:#3A79FF);
+    @extend %quicksand-Bold;
+    padding: 13px 16px;
+    background-color:#D2E1FF;
+  }
+}
