@@ -1,37 +1,43 @@
 .banner{
-  @media screen and (max-width: $content-wight-l){
+  @include monitor(){
     .container{
       max-width: $content-wight-md;
     }
   }
-  @media screen and (max-width: $content-wight-md){
+
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
   }
-  @media screen and (max-width: $content-wight-s){
-    .container{
-      max-width: $content-wight-xs;
-    }
-    h1{
-      font-size: 43px;
-    }
-    .banner__wrapper-round {
-      padding-bottom: 65px;
-    }
+
+  @include tablet(){
+  .container{
+    max-width: $content-wight-xs;
   }
-  @media screen and (max-width: $content-wight-xs){
-    .container{
-      max-width: 320px;
-    }
-    padding-top: 47px;
-    h1{
-      font-size: 22px;
-    }
-    p{
-      max-width: 270px;
-      font-size: 12px;
-      padding-bottom: 32px;
-    }
-    }
+  h1{
+    font-size: 41px;
   }
+  .banner__wrapper-round {
+    padding-bottom: 65px;
+  }
+}
+
+  @include mobile(){
+  .container{
+    max-width: 320px;
+  }
+  padding-top: 47px;
+  h1{
+    font-size: 22px;
+  }
+  p{
+    max-width: 270px;
+    font-size: 12px;
+    padding-bottom: 32px;
+  }
+}
+
+}
+
+

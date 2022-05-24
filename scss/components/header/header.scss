@@ -1,4 +1,5 @@
 .header{
+
  nav{
    [type="checkbox"]{
      display: none;
@@ -71,6 +72,9 @@
 
   &__dropdown{
     @extend %dropdown-menu;
+    ul{
+
+    }
     li{
       padding: 10px 0;
     }

@@ -4,6 +4,9 @@
     width: 50%;
     position: relative;
   }
+  &__span{
+    @extend %quicksand-light;
+  }
   &__wrapper-coll-text{
     padding: 208px 0 190px 158px;
   }
@@ -46,9 +49,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
+    height: 436px;
     width: 100%;
-    margin-top: 85px;
-    padding-right: 44px;
+    margin-top: 220px;
   }
   }

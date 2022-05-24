@@ -17,6 +17,7 @@
       @extend %roboto-medium;
       font-size: 10px;
       color: $title-color;
+      padding-bottom: 20px;
     }
     h2{
       @extend %quicksand-medium;
@@ -49,8 +50,8 @@
       max-width: 389px;
       font-size: $size-text-m;
       color: #8D96BD;
-      line-height: 27px;
-      margin-bottom: 43px;
+      line-height: 24px;
+      margin-bottom: 42px;
     }
   }
   &__wrapper-button{

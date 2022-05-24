@@ -1,5 +1,5 @@
 .informationBlog{
-  @media screen and (max-width: $content-wight-l){
+  @include monitor(){
     .container{
       max-width: $content-wight-md;
     }
@@ -18,22 +18,22 @@
     }
   }
 
-  @media screen and (max-width: $content-wight-md){
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
-   &__wrapper-text{
-     padding-left: 34px;
-     h2{
-       font-size: 28px;
-       padding-bottom: $size-text-md;
-     }
-     p{
-       max-width: 423px;
-       font-size: $size-small-title;
-       margin-bottom: $size-text-menu;
-     }
-   }
+    &__wrapper-text{
+      padding-left: 34px;
+      h2{
+        font-size: 28px;
+        padding-bottom: $size-text-md;
+      }
+      p{
+        max-width: 423px;
+        font-size: $size-small-title;
+        margin-bottom: $size-text-menu;
+      }
+    }
     &__wrapper-button{
       p{
         margin: 0;
@@ -47,53 +47,59 @@
     }
   }
 
-  @media screen and (max-width: $content-wight-s){
-    .container{
-      max-width: $content-wight-xs;
-    }
-    .row{
-      flex-direction: column;
-    }
-    &__wrapper-text{
-      padding: 0;
-      h2{
-        font-size: 30px;
-      }
-      p{
-        margin-bottom: $size-text-ml;
-        max-width: 428px;
-        font-size: $size-text-m;
-      }
-    }
-    &__wrapper-images{
-      padding-bottom: $size-text-ml;
-      gap: 32px;
-      justify-content: center;
-    }
-    &__wrapper-button{
-      p{
-        margin: 0;
-      }
-    }
-    &__content{
-      padding-left: 34px;
-    }
-  }
+  @include tablet(){
+   .container{
+     max-width: $content-wight-xs;
+   }
+   .row{
+     flex-direction: column;
+   }
+   &__wrapper-text{
+     padding: 0;
+     h2{
+       font-size: 30px;
+     }
+     p{
+       margin-bottom: $size-text-ml;
+       max-width: 428px;
+       font-size: $size-text-m;
+     }
+   }
+   &__wrapper-images{
+     padding-bottom: $size-text-ml;
+     gap: 32px;
+     justify-content: center;
+   }
+   &__wrapper-button{
+     p{
+       margin: 0;
+     }
+   }
+   &__content{
+     padding-left: 34px;
+   }
+ }
 
-  @media screen and (max-width: $content-wight-xs){
-    .container{
-      max-width: 320px;
-    }
-    &__content{
-      padding: 63px 35px 45px 35px;
-    }
-    &__wrapper-text{
-      h2{
-        font-size: 26px;
-      }
-      p{
-        font-size: $size-text-menu;
-      }
-    }
-  }
-}
+  @include mobile(){
+   .container{
+     max-width: 320px;
+   }
+   padding-top: 60px;
+   &__title{
+     padding-bottom: 60px;
+   }
+   &__content{
+     padding: 63px 35px 45px 35px;
+   }
+   &__wrapper-text{
+     h2{
+       font-size: 26px;
+     }
+     p{
+       font-size: $size-text-menu;
+     }
+   }
+ }
+
+ }
+

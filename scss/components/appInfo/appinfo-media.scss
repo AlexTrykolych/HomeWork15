@@ -1,20 +1,20 @@
 .appInfo{
-  @media screen and (max-width: $content-wight-l){
-    .container{
-      max-width: $content-wight-md;
-    }
-    &__border{
-      height: 2px;
-    }
+  @include monitor(){
+      .container{
+        max-width: $content-wight-md;
+      }
+      &__border{
+        height: 2px;
+      }
   }
 
-  @media  screen and ($content-wight-md){
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
   }
 
-  @media screen and (max-width: $content-wight-s){
+  @include tablet(){
     .container{
       max-width: $content-wight-xs;
     }
@@ -46,9 +46,10 @@
         display: none;
       }
     }
+
   }
 
-  @media screen and (max-width: $content-wight-xs){
+  @include mobile(){
     .container{
       max-width: 320px;
     }
@@ -69,12 +70,13 @@
       }
     }
     &__btn-red{
-      width: 100%;
+      width: 90%;
       text-align: center;
     }
     &__btn-blue{
-      width: 100%;
+      width: 90%;
       text-align: center;
     }
   }
+
 }

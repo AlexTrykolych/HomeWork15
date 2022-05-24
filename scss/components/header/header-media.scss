@@ -1,6 +1,6 @@
 
 .header{
-  @media screen and (max-width: $content-wight-l){
+  @include monitor(){
     .container{
       max-width: 980px;
     }
@@ -20,7 +20,7 @@
     }
   }
 
-  @media screen and (max-width: $content-wight-md){
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
@@ -40,48 +40,49 @@
     }
   }
 
-  @media screen and (max-width: $content-wight-s){
+  @include tablet(){
     .container{
       max-width: $content-wight-xs;
     }
-  &{
-    position: relative;
-  }
-  .container{
-    max-width: 540px;
-  }
+    &{
+      position: relative;
+    }
+    .container{
+      max-width: 540px;
+    }
 
-  &__menu{
-    [type="checkbox"]:checked + ul{
-       display: block;
+    &__menu{
+      [type="checkbox"]:checked + ul{
+        display: block;
+      }
+      ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 19%;
+        background-color: $main-color;
+      }
+      li{
+        text-align: center;
+        padding: 10px 0;
+      }
+      a{
+        color: $list-hover-color;
+        font-size: 18px;
+      }
     }
-    ul{
-      display: none;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 19%;
-      background-color: $main-color;
-    }
-    li{
-      text-align: center;
-      padding: 10px 0;
-    }
-    a{
-      color: $list-hover-color;
-      font-size: 18px;
-    }
-  }
     &__dropdown-button{
       justify-content: center;
     }
     &__dropdown{
-    display: none !important;
-  }
+      display: none !important;
+    }
     &__btn{
       display: none;
     }
-}
+  }
+
 
   @media screen and (min-width: $content-wight-s){
     .container{

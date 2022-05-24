@@ -1,11 +1,11 @@
 .indicators{
-  @media screen and (max-width: $content-wight-l){
+  @include monitor(){
     .container{
       max-width: $content-wight-md;
     }
   }
 
-  @media screen and (max-width: $content-wight-md){
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
@@ -23,62 +23,64 @@
     }
   }
 
-  @media screen and (max-width: $content-wight-s){
-    .container{
-      max-width: $content-wight-xs;
-    }
-    p{
-   padding-bottom: 10px;
-    }
-    .row{
-      flex-direction: column;
-    }
-    &__coll{
-      width: 100%;
-    }
-    &__coll-speed{
-      padding: 0;
-      text-align: center;
-      align-items: center;
-      margin: 175px 0 30px 0;
-      p{
-        max-width: 100%;
-      }
-    }
-    &__coll-people{
-      padding: 0;
-      text-align: -webkit-center;
-      p{
-        max-width: 100%;
-        padding-bottom: 10px;
-      }
-    }
-    &__title{
-      margin-bottom: 10px;
-    }
-    &__icons-people{
-      margin-bottom: 0;
-      padding-top: 25px;
-    }
-    &__icons-speed{
-      margin-bottom: 0;
-      padding-top: 25px;
-    }
-  }
+  @include tablet(){
+   .container{
+     max-width: $content-wight-xs;
+   }
+   p{
+     padding-bottom: 10px;
+   }
+   .row{
+     flex-direction: column;
+   }
+   &__coll{
+     width: 100%;
+   }
+   &__coll-speed{
+     padding: 0;
+     text-align: center;
+     align-items: center;
+     margin: 175px 0 30px 0;
+     p{
+       max-width: 100%;
+     }
+   }
+   &__coll-people{
+     padding: 0;
+     text-align: -webkit-center;
+     p{
+       max-width: 100%;
+       padding-bottom: 10px;
+     }
+   }
+   &__title{
+     margin-bottom: 10px;
+   }
+   &__icons-people{
+     margin-bottom: 0;
+     padding-top: 25px;
+   }
+   &__icons-speed{
+     margin-bottom: 0;
+     padding-top: 25px;
+   }
+ }
 
-  @media screen and (max-width: $content-wight-xs){
-    .container{
-      max-width: 320px;
-    }
-    &__coll-speed{
-      margin-top: 340px;
-    }
-    &__title{
-      font-size: 35px;
-    }
-    p{
-      text-align: center;
-      font-size: 15px;
-    }
-  }
-}
+  @include mobile(){
+   .container{
+     max-width: 320px;
+   }
+   &__coll-speed{
+     margin-top: 340px;
+   }
+   &__title{
+     font-size: 35px;
+   }
+   p{
+     text-align: center;
+     font-size: 15px;
+   }
+ }
+
+ }
+

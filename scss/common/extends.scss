@@ -1,34 +1,34 @@
 %open-sans-bold{
-font-family: $fon-open-sans;
+font-family: "Open Sans",sans-serif;
   font-weight: bold;
 }
 %open-sans-semiBold{
-  font-family: $fon-open-sans;
+  font-family: "Open Sans",sans-serif;
   font-weight: 600;
 }
 %quicksand-Bold{
-  font-family: $fon-quicksand;
+  font-family: "Quicksand",sans-serif;
   font-weight: bold;
 }
 %quicksand-medium{
-  font-family: $fon-quicksand;
+  font-family: "Quicksand",sans-serif;
   font-weight: 500;
 }
 %quicksand-light{
-  font-family: $fon-quicksand;
+  font-family: "Quicksand",sans-serif;
   font-weight: 300;
 }
 %quicksand-regular{
-  font-family: $fon-quicksand;
-  font-weight: 400;
+  font-family: "Quicksand",sans-serif;
+  font-weight: normal;
 }
 %roboto-medium{
-  font-family: $fon-roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 %roboto-regular{
-  font-family: $fon-roboto;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 %list-un-style-a{
@@ -76,8 +76,6 @@ font-family: $fon-open-sans;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
 }
 %before-after-settings{
   content: '';

@@ -1,10 +1,10 @@
 .desktopInfo{
-  @media screen  and (max-width: $content-wight-l){
+  @include monitor(){
     .container{
       max-width: $content-wight-md;
     }
 
-     p {
+    p {
       max-width: 390px;
       font-size: 13px;
       line-height: 28px;
@@ -12,12 +12,13 @@
     }
     &__wrapper-banner{
       width: 85%;
-      margin: 55px 0 60px 25px;
+      margin: 191px 0 60px 55px;
       background-size: contain;
 
     }
   }
-  @media screen and (max-width: $content-wight-md){
+
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
@@ -30,14 +31,15 @@
       margin-bottom: 0;
     }
   }
-  @media screen and (max-width: $content-wight-s){
+
+  @include tablet(){
     .container{
       max-width: $content-wight-xs;
     }
     padding: 45px 0;
-   &__banner-none{
-     display: none;
-   }
+    &__banner-none{
+      display: none;
+    }
     &__coll-text{
       h4{
         font-size: 14px;
@@ -63,9 +65,9 @@
     &__btn{
       justify-content: center;
     }
-
   }
-  @media screen and (max-width:$content-wight-xs ){
+
+  @include mobile(){
     .container{
       max-width: 320px;
     }
@@ -82,4 +84,6 @@
     }
   }
 
-}
+
+  }
+

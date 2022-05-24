@@ -42,12 +42,16 @@
     background-image: url("./../assets/icon/indicators-speed-icon.svg");
     text-align: end;
     margin-bottom: 24px;
+    width: 70px;
+    height: 70px;
   }
 
   &__icons-people{
     @extend %icon-settings;
     background-image: url("./../assets/icon/indicators-people-icon.svg");
     margin-bottom: 24px;
+    width: 70px;
+    height: 70px;
   }
   &__coll-people{
     padding:66px 0 66px 90px ;

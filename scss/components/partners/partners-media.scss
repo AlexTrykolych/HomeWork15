@@ -1,5 +1,6 @@
 .partners{
-  @media  screen and (max-width:$content-wight-md ){
+
+  @include laptop(){
     .container{
       max-width: $content-wight-s;
     }
@@ -8,7 +9,8 @@
       gap: 15px;
     }
   }
-  @media  screen and (max-width: $content-wight-s){
+
+  @include tablet(){
     .container{
       max-width: $content-wight-xs;
     }
@@ -16,5 +18,8 @@
       display: none;
     }
   }
-}
+
+  }
+
+
 
